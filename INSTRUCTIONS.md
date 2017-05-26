@@ -12,11 +12,11 @@ Write a React component, that receives array of React Component classes (e.g. "O
 Let the produced html be as followed:
 
 ```html
-<div className='box'>
+<div class='box'>
   One
-  <div className='box'>
+  <div class='box'>
     Two
-    <div className='box'>
+    <div class='box'>
       Three
     </div>
   </div>
