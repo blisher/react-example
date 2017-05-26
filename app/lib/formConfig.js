@@ -6,6 +6,7 @@ export default {
         { name: 'first_name', label: 'First Name', type: 'text' },
         { name: 'last_name', label: 'Last Name', type: 'text' },
         { name: 'email', label: 'Email', type: 'text' },
+        { name: 'age', label: 'age', type: 'text' },
         { name: 'phone_number', label: 'Phone Number', type: 'text' }
       ]
     },

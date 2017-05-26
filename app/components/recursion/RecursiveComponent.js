@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 
-export default class RecursiveComponent extends React.Component {
+export default class RecursiveComponent extends Component {
 
-	// write recursive method here
-
+  renderRecursive = (components) => {
+    let CurrentComponent = components.shift();
+    if(CurrentComponent == undefined){
+      return null;
+    }
+    return <CurrentComponent>{this.renderRecursive(components)}</CurrentComponent>
+  }
   render() {
     return (
       <div>
-        {/* invoke recursive method here */}
+        {this.renderRecursive(this.props.components)}
       </div>
     );
   }
