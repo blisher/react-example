@@ -4,13 +4,12 @@
   "description": "Simple React example app",
   "main": "index.js",
   "scripts": {
-    "start": "http-server && webpack-dev-server --inline --content-base ./ --env.dev",
+    "start": "http-server; webpack-dev-server --inline --content-base ./ --env.dev",
     "build": "webpack --env.prod",
     "lint": "eslint app test",
     "test": "cross-env NODE_ENV=test nyc mocha",
     "watch:test": "mocha --watch --compilers js:babel-register",
-    "setup": "npm install && npm run validate",
-    "validate": "npm-run-all lint test build"
+    "setup": "npm install && npm run build"
   },
   "repository": {
     "type": "git",
